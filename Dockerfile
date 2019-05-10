@@ -1,6 +1,7 @@
   
 FROM centos:7
-
+ENV http_proxy=http://165.225.106.34:80
+ENV https_proxy=https://165.225.106.34:80
 USER root
 ENV JAVA_HOME /usr/lib/jvm/java
 RUN yum -y install java-1.8.0-openjdk-devel && yum clean all
