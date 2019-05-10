@@ -15,6 +15,9 @@
 
 FROM fabric8/java-jboss-openjdk8-jdk:1.1.7
 
+ENV http_proxy=http://165.225.106.34:80
+ENV https_proxy=https://165.225.106.34:80
+
 ENV JAVA_APP_JAR helloworld-service-fat.jar
 ENV AB_OFF true
 
